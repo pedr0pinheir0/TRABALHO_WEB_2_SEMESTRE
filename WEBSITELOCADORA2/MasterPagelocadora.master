@@ -1,0 +1,111 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPagelocadora.master.cs" Inherits="MasterPagelocadora" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+        .auto-style4 {
+            width: 186px;
+            height: 143px;
+        }
+        .auto-style5 {
+            width: 443px;
+            height: 143px;
+            text-align: center;
+        }
+        .auto-style6 {
+            height: 143px;
+        }
+        .auto-style7 {
+            width: 186px;
+            height: 700px;
+            text-align: left;
+        }
+        .auto-style8 {
+            width: 443px;
+            height: 700px;
+            vertical-align:top;
+        }
+        .auto-style9 {
+            height: 700px;
+            text-align: center;
+        }
+        .auto-style10 {
+            height: 33px;
+            text-align: center;
+        }
+        .auto-style11 {
+            height: 48px;
+            color: #0000FF;
+            text-align: center;
+            font-size: x-large;
+            background-color: #000000;
+        }
+        .auto-style12 {
+            font-size: large;
+        }
+        .auto-style13 {
+            color: #FFFFFF;
+            font-size: x-large;
+        }
+        .auto-style14 {
+            height: 935px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="auto-style14">
+        <table cellpadding="0" cellspacing="0" class="auto-style1">
+            <tr>
+                <td class="auto-style4" style="background-position: -73px; background-image: url('/locadora-2.jpg')"></td>
+                <td class="auto-style5" style="background-color: #000000"><span class="auto-style13"><strong>LOCADORA DO PEDRÃO</strong></span><strong><br class="auto-style13" />
+                    </strong><span class="auto-style13"><strong>DE UM START NA SUA DIVERSÃO</strong></span></td>
+                <td class="auto-style6" style="background-image: url('/netmoveis-filmes.jpg'); background-position: -48px"></td>
+            </tr>
+            <tr>
+                <td class="auto-style7" style="background-color: #00FFCC">
+                    &nbsp;</td>
+                <td class="auto-style8">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+                <td class="auto-style9" style="background-color: #66FFCC">
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1" ImageSet="Arrows">
+                        <HoverNodeStyle Font-Underline="True" ForeColor="#5555DD" />
+                        <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                        <ParentNodeStyle Font-Bold="False" />
+                        <SelectedNodeStyle Font-Underline="True" ForeColor="#5555DD" HorizontalPadding="0px" VerticalPadding="0px" />
+                    </asp:TreeView>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style10" colspan="3"><strong><em><span class="auto-style12">Você esta em</span></em></strong>
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server" Font-Names="Verdana" Font-Size="0.8em" PathSeparator=" : ">
+                        <CurrentNodeStyle ForeColor="#333333" />
+                        <NodeStyle Font-Bold="True" ForeColor="#990000" />
+                        <PathSeparatorStyle Font-Bold="True" ForeColor="#990000" />
+                        <RootNodeStyle Font-Bold="True" ForeColor="#FF8000" />
+                    </asp:SiteMapPath>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style11" colspan="3">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
+                    <strong>DESENVOLVIDO POR P3DRO_PINHEIRO</strong></td>
+            </tr>
+        </table>
+        <br />
+        <br />
+    </div>
+    </form>
+</body>
+</html>
