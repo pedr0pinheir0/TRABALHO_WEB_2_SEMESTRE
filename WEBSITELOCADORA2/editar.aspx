@@ -103,19 +103,29 @@
             </tr>
             <tr>
                 <td class="auto-style19">
-                    <asp:Button ID="btninserir" runat="server" Text="Inserir" OnClick="btninserir_Click" />
+                    <strong>
+                    <asp:Button ID="btninserir" runat="server" Text="Inserir" OnClick="btninserir_Click" CssClass="btn-info disabled focus" style="font-weight: bold" />
+                    </strong>
                 </td>
                 <td class="auto-style19">
-                    <asp:Button ID="btneditar" runat="server" Text="Editar" OnClick="btneditar_Click" />
+                    <strong>
+                    <asp:Button ID="btneditar" runat="server" Text="Editar" OnClick="btneditar_Click" CssClass="btn-success active" style="font-weight: bold" />
+                    </strong>
                 </td>
                 <td class="auto-style20">
-                    <asp:Button ID="btnremover" runat="server" Text="Remover" OnClick="btnremover_Click" />
+                    <strong>
+                    <asp:Button ID="btnremover" runat="server" Text="Remover" OnClick="btnremover_Click" CssClass="btn-danger active" style="font-weight: bold" />
+                    </strong>
                 </td>
                 <td class="auto-style21">
-                    <asp:Button ID="btngravar" runat="server" Text="Gravar" OnClick="btngravar_Click" />
+                    <strong>
+                    <asp:Button ID="btngravar" runat="server" Text="Gravar" OnClick="btngravar_Click" CssClass="btn-warning disabled active" style="font-weight: bold" />
+                    </strong>
                 </td>
                 <td class="auto-style19">
-                    <asp:Button ID="btncancelar" runat="server" Text="Cancelar" OnClick="btncancelar_Click" />
+                    <strong>
+                    <asp:Button ID="btncancelar" runat="server" Text="Cancelar" OnClick="btncancelar_Click" CssClass="btn-danger active" style="font-weight: bold" />
+                    </strong>
                 </td>
                 <td class="auto-style19">&nbsp;</td>
             </tr>
